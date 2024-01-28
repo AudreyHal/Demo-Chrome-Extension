@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "My extension",
+    "version": "1.0.0",
+    "background":{
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup" : "index.html"
+    },
+    "icons" : {
+      "32" : "icon-32.png"
+    },
+    "permissions":[
+        "scripting"
+    ],
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ]
+  }
